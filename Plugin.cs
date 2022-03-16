@@ -26,6 +26,7 @@ namespace InscryptionExampleMod
         // Unpatch everything if we got unloaded.
         private void OnDestroy()
         {
+            logger.LogInfo("Good bye, World...");
             harmony.UnpatchSelf();
         }
     }
