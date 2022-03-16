@@ -16,4 +16,4 @@ To build the plugin, You have to run
 > dotnet build
 ```
 
-Then the plugin DLL file will appear in `bin/Debug/netstandard2.1`
+Then the plugin DLL file will appear in `bin/Debug/netstandard2.1/`
