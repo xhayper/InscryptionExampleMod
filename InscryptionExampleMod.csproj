@@ -23,9 +23,10 @@
 	<ItemGroup>
 		<!-- Inscryption's assembly -->
 		<!-- 'Private' field is set to false so the 'Assembly-CSharp.dll' won't be copied to the DLL output. -->
-		<Reference Include="Assembly-CSharp" Private="false">
+		<!-- <Reference Include="Assembly-CSharp" Private="false">
 			<HintPath>lib/Assembly-CSharp.dll</HintPath>
-		</Reference>
+		</Reference> -->
+		<PackageReference Include="Inscryption.GameLibs" Version="0.30.0-r.0" />
 	</ItemGroup>
 
 </Project>
