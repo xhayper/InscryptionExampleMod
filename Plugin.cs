@@ -18,7 +18,7 @@ namespace InscryptionExampleMod
         {
             logger = Logger;
             logger.LogInfo("Hello, World!");
-            // Patching Inscryption's methods using HarmonyX.
+            // Make HarmonyX look for the patches.
             // See also: https://github.com/BepInEx/HarmonyX/wiki/Basic-usage
             harmony = Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), PluginInfo.PLUGIN_GUID);
         }
