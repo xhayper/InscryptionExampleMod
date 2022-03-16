@@ -1,6 +1,6 @@
 # InscryptionExampleMod
 
-A BepInEx plugin template for a card game called "Inscryption"
+A BepInEx plugin example for a card game called "Inscryption"
 
 # Getting Started
 
