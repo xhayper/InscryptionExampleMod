@@ -4,7 +4,7 @@ A BepInEx plugin example for a card game called "Inscryption"
 
 # Getting Started
 
-- Edit `InscryptionExampleMod.csproj` and rename the file to anything you want (Keep the `csproj` extenstion)
+- Edit everything with the word `InscryptionExampleMod` to anything you want.
 - Run `dotnet restore`
 - Start making your mod! 
 
