@@ -17,10 +17,10 @@ namespace InscryptionExampleMod
             __instance.titleRenderer.sprite = null;
             if (__instance.CardInSlot || card != null && card.Slotted) return false;
             if (card != null) return true;
-            Plugin.logger.LogInfo("Replacing the menu cardtitle text to \"- Total misplay -\"");
+            Plugin.logger.LogInfo("Replacing the menu cardtitle text to \"- TOTAL MISPLAY -\"");
             __instance.titleText.gameObject.SetActive(true);
             __instance.titleTextShadow.gameObject.SetActive(true);
-            var text = "- Total misplay -";
+            var text = "- TOTAL MISPLAY -";
             __instance.titleText.SetText(text);
             __instance.titleTextShadow.SetText(text);
             __instance.titleText.SetColor(__instance.titleTextColor);
@@ -33,7 +33,7 @@ namespace InscryptionExampleMod
         [HarmonyPrefix, HarmonyPatch(nameof(MenuController.OnCardCursorExited))]
         public static bool OnCardCursorExited(MenuCard card, MenuController __instance)
         {
-            Plugin.logger.LogInfo("Hello! The cursor is out!");
+            Plugin.logger.LogInfo("Hello! The cursor is out of selection!");
             if (__instance.CardInSlot || card != null && card.Slotted) return false;
             __instance.DisplayMenuCardTitle(null);
             return false;
