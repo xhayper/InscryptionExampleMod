@@ -33,7 +33,7 @@ namespace InscryptionExampleMod
         [HarmonyPrefix, HarmonyPatch(nameof(MenuController.OnCardCursorExited))]
         public static bool OnCardCursorExited(MenuCard card, MenuController __instance)
         {
-            Plugin.logger.LogInfo("Hello! The cursor is out of selection!");
+            Plugin.logger.LogInfo("Hello! The cursor is out of card area!");
             if (__instance.CardInSlot || card != null && card.Slotted) return false;
             __instance.DisplayMenuCardTitle(null);
             return false;
